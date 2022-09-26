@@ -98,7 +98,7 @@ export function CreateAdModal() {
                             <div className='flex flex-col gap-2'>
                                 <label htmlFor="weekDays">Quando costuma jogar?</label>
 
-                                <ToggleGroup.Root type='multiple' className='grid grid-cols-4 gap-2' onValueChange={setWeekDays} value={weekDays}>
+                                <ToggleGroup.Root type='multiple' className='grid grid-cols-8 gap-2' onValueChange={setWeekDays} value={weekDays}>
 
                                     <ToggleGroup.Item value="0" title='Domingo' className={`w-8 h-8 rounded  ${weekDays.includes('0') ? 'bg-violet-500' : 'bg-zinc-900'}`} >D</ToggleGroup.Item>
                                     <ToggleGroup.Item value="1" title='Segunda' className={`w-8 h-8 rounded  ${weekDays.includes('1') ? 'bg-violet-500' : 'bg-zinc-900'}`} >S</ToggleGroup.Item>
@@ -150,7 +150,7 @@ export function CreateAdModal() {
                                 className='bg-violet-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-violet-600 '
                             >
                                 <GameController size={24} />
-                                Escolher Duo
+                                Publicar anúncio
                             </button>
                         </footer>
                     </form>
